@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:...&display=swap'); /* Importa a fonte "Poppins" do Google Fonts */
+
+body {
+    background-image: url(imagem/background.2.jpeg); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center center; /* Centraliza a imagem de fundo */
+}
+
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamento interno padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo do tamanho */
+    font-family: "Poppins", sans-serif; /* Aplica a fonte "Poppins" a todos os elementos */
+}
+
+header {
+    height: 100%; /* Define a altura do cabeçalho como 100% */
+    display: flex; /* Utiliza o layout flexbox */
+    background-color: rgba(73, 73, 73, 0.178); /* Cor de fundo semi-transparente */
+    justify-content: space-around; /* Distribui o espaço entre os elementos */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 10px 0px; /* Define espaçamento vertical */
+}
+
+.container titulo {
+    display: flex; /* Aplica layout flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.menu li {
+    display: inline-block; /* Exibe os itens da lista em linha */
+}
+
+.menu li a {
+    text-transform: uppercase; /* Converte o texto para maiúsculas */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Define a cor do texto como branco */
+    margin: 0 10px; /* Adiciona margem lateral aos links */
+    font-size: 15px; /* Define o tamanho da fonte dos links */
+    padding: 10px 15px; /* Aumenta a área clicável dos links */
+}
+
+.menu li a:hover {
+    background-color: rgba(100,100, 100, 0.8); /* Muda a cor de fundo ao passar o mouse */
+}
+
+header h1 {
+    font-size: 40px; /* Define o tamanho da fonte do título no cabeçalho */
+}
+
+footer {
+    display: flex; /* Aplica layout flexbox no rodapé */
+    bottom: 0; /* Posiciona o rodapé na parte inferior */
+    position: relative; /* Define a posição relativa */
+    width: 100%; /* Define a largura total do rodapé */
+    justify-content: left; /* Alinha o conteúdo à esquerda */
+}
+
+p {
+    font-size: 18px; /* Define o tamanho da fonte dos parágrafos */
+    text-align: center; /* Centraliza o texto dos parágrafos */
+}
+
+h2 {
+    font-size: 30px; /* Define o tamanho da fonte dos subtítulos */
+    text-align: center; /* Centraliza o texto dos subtítulos */
+    align-content: center; /* Alinha o conteúdo dos subtítulos */
+    margin: 20px; /* Adiciona margem ao redor dos subtítulos */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.651); /* Define a cor de fundo do contêiner */
+    max-width: 100%; /* Define a largura máxima do contêiner */
+    display: flex; /* Utiliza layout flexbox no contêiner */
+    border-radius: 20px; /* Arredonda os cantos do contêiner */
+    padding: 10px 20px; /* Define o espaçamento interno do contêiner */
+    text-align: justify; /* Justifica o texto dentro do contêiner */
+    justify-content: center; /* Centraliza os elementos dentro do contêiner */
+    height: 100%; /* Define a altura do contêiner como 100% */
+}
+
+h1 {
+    color: white; /* Define a cor do título como branco */
+}
+
+.container li {
+    padding: 20px 30px; /* Adiciona espaçamento interno aos itens da lista no contêiner */
+}

@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:...&display=swap'); 
+/* Importa a fonte "Poppins" do Google Fonts */
+
+body {
+    background-image: url(imagem/background.2.jpeg); 
+    /* Define a imagem de fundo da página */
+    
+    background-size: cover; 
+    /* Faz a imagem cobrir toda a área de fundo */
+    
+    background-repeat: no-repeat; 
+    /* Evita que a imagem de fundo se repita */
+    
+    background-position: center center; 
+    /* Centraliza a imagem de fundo tanto horizontal quanto verticalmente */
+}
+
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;    
+    font-family: "Poppins", sans-serif; 
+  /*PADRÃO*/
+}
+
+header {
+    height: 100%; 
+    /* Define a altura do cabeçalho como 100% da altura disponível */
+    
+    display: flex; 
+    /* Utiliza o layout flexbox para os itens do cabeçalho */
+    
+    background-color: rgba(73, 73, 73, 0.178); 
+    /* Define a cor de fundo do cabeçalho com transparência */
+    
+    justify-content: space-around; 
+    /* Distribui o espaço entre os itens no cabeçalho */
+    
+    align-items: center; 
+    /* Alinha os itens verticalmente no centro do cabeçalho */
+    
+    padding: 10px 0px; 
+    /* Define o espaçamento vertical no cabeçalho */
+}
+
+.container titulo {
+    display: flex; 
+    /* Aplica o layout flexbox ao contêiner do título */
+    
+    align-items: center; 
+    /* Alinha os itens verticalmente no centro do contêiner */
+}
+
+.menu li {
+    display: inline-block; 
+    /* Exibe os itens da lista em linha, ao invés de em coluna */
+}
+
+.menu li a {
+    text-transform: uppercase; 
+    /* Converte o texto dos links para maiúsculas */
+    
+    text-decoration: none; 
+    /* Remove o sublinhado dos links */
+    
+    color: white; 
+    /* Define a cor do texto dos links como branco */
+    
+    margin: 0 10px; 
+    /* Adiciona margem lateral entre os links */
+    
+    font-size: 15px; 
+    /* Define o tamanho da fonte dos links */
+    
+    padding: 10px 15px; 
+    /* Aumenta a área clicável dos links */
+}
+
+.menu li a:hover {
+    background-color: rgba(100, 100, 100, 0.8); 
+    /* Muda a cor de fundo do link ao passar o mouse */
+}
+
+header h1 {
+    color: rgb(255, 255, 255); 
+    /* Define a cor do título como branco */
+    
+    font-size: 40px; 
+    /* Define o tamanho da fonte do título */
+}
+
+footer {
+    display: flex; 
+    /* Aplica o layout flexbox no rodapé */
+    
+    bottom: 0; 
+    /* Posiciona o rodapé na parte inferior */
+    
+    position: relative; 
+    /* Define a posição do rodapé como relativa */
+    
+    width: 100%; 
+    /* Define a largura do rodapé como 100% */
+    
+    justify-content: left; 
+    /* Alinha o conteúdo do rodapé à esquerda */
+}
+
+.container {
+    max-width: 100%; 
+    /* Define a largura máxima do contêiner */
+    
+    margin: 10px; 
+    /* Adiciona margem ao redor do contêiner */
+    
+    display: flex; 
+    /* Aplica o layout flexbox ao contêiner */
+}
+
+form {
+    background-color: rgb(148, 144, 144); 
+    /* Define a cor de fundo do formulário */
+    
+    max-width: 500px; 
+    /* Define a largura máxima do formulário */
+    
+    height: 400px; 
+    /* Define a altura do formulário */
+    
+    padding: 40px; 
+    /* Adiciona espaçamento interno ao formulário */
+    
+    border-radius: 20px; 
+    /* Arredonda os cantos do formulário */
+    
+    color: rgb(0, 0, 0); 
+    /* Define a cor do texto do formulário */
+}
+
+form h1 {
+    text-align: center; 
+    /* Centraliza o texto do título no formulário */
+    
+    font-size: 20px; 
+    /* Define o tamanho da fonte do título do formulário */
+    
+    color: rgb(0, 0, 0); 
+    /* Define a cor do título do formulário como preto */
+}
+
+form p {
+    text-align: center; 
+    /* Centraliza o texto dos parágrafos no formulário */
+    
+    margin: 20px 0; 
+    /* Adiciona margem vertical aos parágrafos */
+}
+
+.input-single {
+    position: relative; 
+    /* Define a posição relativa para facilitar a manipulação do label */
+    
+    margin: 20px 0; 
+    /* Adiciona margem vertical ao campo de entrada */
+}
+
+.input-single label {
+    position: absolute; 
+    /* Posiciona o label de forma absoluta dentro do contêiner relativo */
+    
+    left: 0; 
+    bottom: 5px; 
+    /* Posiciona o label na parte inferior esquerda do contêiner */
+    
+    transition: all 0.2s; 
+    /* Adiciona uma transição suave ao label */
+    
+    cursor: text; 
+    /* Muda o cursor para texto ao passar sobre o label */
+}
+
+.input {
+    width: 100%; 
+    /* Define a largura total do campo de entrada */
+    
+    border: 0; 
+    /* Remove a borda padrão do campo de entrada */
+    
+    border-bottom: 2px solid #ccc; 
+    /* Adiciona uma borda inferior ao campo de entrada */
+    
+    padding: 5px; 
+    /* Adiciona espaçamento interno ao campo de entrada */
+    
+    font-size: 17px; 
+    /* Define o tamanho da fonte no campo de entrada */
+    
+    outline: none; 
+    /* Remove o contorno padrão ao focar no campo de entrada */
+}
+
+form .input-single .input:focus ~ label {
+    transform: translateY(-20px); 
+    /* Move o label para cima ao focar no campo de entrada */
+    
+    font-size: 12px; 
+    /* Reduz o tamanho da fonte do label ao focar no campo de entrada */
+}
+
+.btn {
+    width: 100%; 
+    /* Define a largura total do botão */
+    
+    text-align: center; 
+    /* Centraliza o texto dentro do botão */
+}
+
+form input[type=submit] {
+    padding: 10px 30px; 
+    /* Define o espaçamento interno do botão de envio */
+    
+    border: 0; 
+    /* Remove a borda padrão do botão de envio */
+    
+    border-radius: 10px; 
+    /* Arredonda os cantos do botão de envio */
+    
+    color: black; 
+    /* Define a cor do texto do botão de envio */
+    
+    cursor: pointer; 
+    /* Muda o cursor para indicar que o botão é clicável */
+}
+
+textarea {
+    color: black; 
+    /* Define a cor do texto na área de texto */
+    
+    font-size: 10px; 
+    /* Define o tamanho da fonte na área de texto */
+    
+    outline: none; 
+    /* Remove o contorno padrão ao focar na área de texto */
+}
+
+.form-container {
+    display: flex; 
+    /* Aplica o layout flexbox ao contêiner do formulário */
+    
+    justify-content: center; 
+    /* Centraliza horizontalmente o formulário */
+    
+    align-items: center; 
+    /* Alinha verticalmente o formulário no centro */
+    
+    height: 100%; 
+    /* Define a altura do contêiner como 100% da altura disponível */
+}

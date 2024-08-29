@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*import do estilo de letra*/
+
+body {
+    background-image: url(imagem/background.2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif; 
+    /*modificações básicas*/
+}
+
+header {
+    height: 100%;
+    display: flex;
+    background-color: rgba(73, 73, 73, 0.178);
+    justify-content: space-around; /*ter um espaço entre cada texto*/
+    align-items: center; /*alinhar os itens do CABEÇALHO NO CENTRO*/
+    padding: 10px 0px; /*altura do cabeçalho*/
+}
+.container titulo {
+    display: flex;
+    align-items: center; /*alinhar todos os itens no centro*/
+}
+.menu li {
+    display: inline-block; /*para tirar a lista uma emcima da outra e colocar uma do lado da outra*/
+}
+.menu li a{
+    text-transform: uppercase; 
+    text-decoration: none; /*tirar o sublinado dos links*/
+    color: white;
+    margin: 0 10px;
+    font-size: 15px;
+    padding: 10px 15px; /*aumenta área para clickar emcima*/
+}
+.menu li a:hover {
+    background-color: rgba(100,100, 100, 0.8); /*quando passar o cursor emcima do link, vira cinza*/
+}
+header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+footer {
+    display: flex;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    justify-content: left; /*conteudo do texto no centro*/
+}
+
+.container {
+    max-width: 100%;
+    margin: 10px;
+    display: flex;
+}
+
+/* Seção de texto do projeto */
+.textoprojeto {
+    background-color: #ffffffcc;
+    max-width: 1028px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+/* Estilo do título da seção */
+.textoprojeto h2 {
+    margin-bottom: 15px;
+    color: #000000;
+    margin: 10px 20px;
+    align-content: center;
+}
+
+/* Estilo dos cards de projetos */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffffc7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cards .img {
+    max-width: 100%;
+    text-align: center;
+}
+
+.cards img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.cards p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.cards a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cards a:hover {
+    color: #555;
+    text-decoration: underline;
+}

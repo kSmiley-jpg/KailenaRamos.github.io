@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:...&display=swap'); 
+/* Importa a fonte "Poppins" do Google Fonts */
+
+body {
+    background-image: url(imagem/background.2.jpeg); 
+    /* Define a imagem de fundo da página */
+    
+    background-size: cover; 
+    /* Faz a imagem cobrir toda a área de fundo */
+    
+    background-repeat: no-repeat; 
+    /* Evita que a imagem de fundo se repita */
+    
+    background-position: center center; 
+    /* Centraliza a imagem de fundo tanto horizontal quanto verticalmente */
+}
+
+* {
+    margin: 0; 
+    /* Remove as margens padrão de todos os elementos */
+    
+    padding: 0; 
+    /* Remove o espaçamento interno padrão de todos os elementos */
+    
+    box-sizing: border-box; 
+    /* Inclui bordas e espaçamentos no cálculo da largura/altura dos elementos */
+    
+    font-family: "Poppins", sans-serif; 
+    /* Define a fonte "Poppins" para todos os elementos */
+}
+
+header {
+    height: 100%; 
+    /* Define a altura do cabeçalho como 100% da altura disponível */
+    
+    display: flex; 
+    /* Utiliza o layout flexbox para os itens do cabeçalho */
+    
+    background-color: rgba(73, 73, 73, 0.178); 
+    /* Define a cor de fundo do cabeçalho com transparência */
+    
+    justify-content: space-around; 
+    /* Distribui o espaço entre os itens no cabeçalho */
+    
+    align-items: center; 
+    /* Alinha os itens verticalmente no centro do cabeçalho */
+    
+    padding: 10px 0px; 
+    /* Define o espaçamento vertical no cabeçalho */
+}
+
+.container titulo {
+    display: flex; 
+    /* Aplica o layout flexbox ao contêiner do título */
+    
+    align-items: center; 
+    /* Alinha os itens verticalmente no centro do contêiner */
+}
+
+.menu li {
+    display: inline-block; 
+    /* Exibe os itens da lista em linha, ao invés de em coluna */
+}
+
+.menu li a {
+    text-transform: uppercase; 
+    /* Converte o texto dos links para maiúsculas */
+    
+    text-decoration: none; 
+    /* Remove o sublinhado dos links */
+    
+    color: white; 
+    /* Define a cor do texto dos links como branco */
+    
+    margin: 0 10px; 
+    /* Adiciona margem lateral entre os links */
+    
+    font-size: 2rem; 
+    /* Define o tamanho da fonte dos links */
+    
+    padding: 10px 15px; 
+    /* Aumenta a área clicável dos links */
+}
+
+.menu li a:hover {
+    background-color: rgba(100, 100, 100, 0.8); 
+    /* Muda a cor de fundo do link ao passar o mouse */
+}
+
+header h1 {
+    color: rgb(255, 255, 255); 
+    /* Define a cor do título como branco */
+    
+    font-size: 3rem; 
+    /* Define o tamanho da fonte do título */
+}
+
+footer {
+    display: flex; 
+    /* Aplica o layout flexbox no rodapé */
+    
+    bottom: 0; 
+    /* Posiciona o rodapé na parte inferior */
+    
+    position: relative; 
+    /* Define a posição do rodapé como relativa */
+    
+    max-width: 100%; 
+    /* Define a largura do rodapé como 100% */
+    
+    justify-content: left; 
+    /* Alinha o conteúdo do rodapé à esquerda */
+}
+
+section {
+    display: grid; 
+    /* Utiliza o layout grid na seção */
+    
+    padding-left: 20px; 
+    padding-right: 20px; 
+    /* Adiciona espaçamento interno nas laterais da seção */
+    
+    justify-items: center; 
+    /* Centraliza os itens no grid */
+    
+    text-align: justify; 
+    /* Justifica o texto dentro da seção */
+}
+
+p {
+    border-radius: 20px; 
+    /* Arredonda os cantos dos parágrafos */
+    
+    font-size: 2rem; 
+    /* Define o tamanho da fonte dos parágrafos */
+    
+    padding: 20px; 
+    /* Adiciona espaçamento interno nos parágrafos */
+    
+    color: black; 
+    /* Define a cor do texto dos parágrafos como preto */
+}
+
+h2 {
+    font-size: 3rem;
+    /* Define o tamanho da fonte dos subtítulos */
+    
+    font-style: italic; 
+    /* Aplica o estilo itálico aos subtítulos */
+    
+    padding: 10px 20px; 
+    /* Adiciona espaçamento interno aos subtítulos */
+    
+    color: rgb(0, 0, 0); 
+    /* Define a cor dos subtítulos como preto */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.76); 
+    /* Define a cor de fundo do contêiner com transparência */
+    
+    display: flex; 
+    /* Aplica o layout flexbox no contêiner */
+    
+    align-items: center; 
+    align-content: center; 
+    /* Alinha os itens verticalmente e o conteúdo no centro do contêiner */
+    
+    border-radius: 20px; 
+    /* Arredonda os cantos do contêiner */
+    
+    max-width: 100%; 
+    /* Define a largura máxima do contêiner */
+    
+    margin: 10px; 
+    /* Adiciona margem ao redor do contêiner */
+    justify-content: space-between;
+}
